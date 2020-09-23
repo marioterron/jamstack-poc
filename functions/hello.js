@@ -1,6 +1,6 @@
 exports.handler = () => {
   return {
     statusCode: 200,
-    body: 'Hello world from Netlify serverless function',
+    body: JSON.stringify({ message: 'Hello world from Netlify serverless function' }),
   };
 };
