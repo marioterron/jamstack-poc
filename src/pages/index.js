@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 
 export default function Home() {
   const [greeting, setGreeting] = useState('loading...');
 
   useEffect(() => {
-    fetch('/api/hello')
-      .then((response) => response.json())
+    axios
+      .get('/api/hello')
+      .then((response) => response.data)
       .then((data) => setGreeting(data));
   }, []);
 
