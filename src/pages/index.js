@@ -6,12 +6,7 @@ export default function Home() {
   useEffect(() => {
     fetch('/api/hello')
       .then((response) => response.json())
-      .then((data) => {
-        setGreeting(data);
-      })
-      .catch((error) => {
-        console.error(error);
-      });
+      .then((data) => setGreeting(data));
   }, []);
 
   return <div>{greeting}</div>;
