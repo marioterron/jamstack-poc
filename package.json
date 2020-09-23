@@ -6,10 +6,7 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "dev": "gatsby develop"
   },
   "dependencies": {
     "gatsby": "^2.24.63",

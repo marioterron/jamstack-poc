@@ -1,4 +1,7 @@
 {
+	"globals": {
+		"fetch": true
+	},
 	"extends": ["airbnb", "prettier", "prettier/react"],
 	"plugins": ["prettier", "import", "react", "jsx-a11y"],
 	"parser": "babel-eslint",
