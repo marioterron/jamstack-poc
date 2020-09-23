@@ -6,7 +6,7 @@ export default function Home() {
 
   useEffect(() => {
     axios
-      .get('/api/hello')
+      .get('/.netlify/functions/hello')
       .then((response) => {
         console.log(response);
 

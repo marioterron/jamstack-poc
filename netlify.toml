@@ -2,13 +2,3 @@
   functions = "functions"
   command = "yarn run build"
   publish = "public"
-
-[[redirects]]
-  from = "/api/*"
-  to = "/.netlify/functions/:splat"
-  status = 200
-
-[[redirects]]
-  from = "https://jamstack-poc.netlify.app/api/*"
-  to = "https://jamstack-poc.netlify.app/.netlify/functions/:splat"
-  status = 200
