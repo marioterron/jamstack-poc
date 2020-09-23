@@ -12,7 +12,7 @@ export default function Home() {
 
         return response.data;
       })
-      .then((data) => setGreeting(data));
+      .then((data) => setGreeting(data.message));
   }, []);
 
   return <div>{greeting}</div>;
