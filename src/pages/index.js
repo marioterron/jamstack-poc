@@ -4,9 +4,11 @@ import axios from 'axios';
 export default function Home() {
   const [greeting, setGreeting] = useState('loading...');
 
+  console.log(process.env.URL);
+
   useEffect(() => {
     axios
-      .get('/.netlify/functions/hello')
+      .get('jamstack-poc.netlify.app/.netlify/functions/hello')
       .then((response) => {
         console.log(response);
 
