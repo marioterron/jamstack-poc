@@ -7,7 +7,11 @@ export default function Home() {
   useEffect(() => {
     axios
       .get('/api/hello')
-      .then((response) => response.data)
+      .then((response) => {
+        console.log(response);
+
+        return response.data;
+      })
       .then((data) => setGreeting(data));
   }, []);
 
