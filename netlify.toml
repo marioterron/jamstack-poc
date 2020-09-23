@@ -1,4 +1,4 @@
 [build]
   functions = "./functions"
-  command = "yarn run build"
+  command = "gatsby develop"
   publish = "public"
