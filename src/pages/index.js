@@ -6,12 +6,8 @@ export default function Home() {
 
   useEffect(() => {
     axios
-      .get('/.netlify/functions/greeting')
-      .then((response) => {
-        console.log(response);
-
-        return response.data;
-      })
+      .get('/api/greeting')
+      .then((response) => response.data)
       .then((data) => setGreeting(data.message));
   }, []);
 
