@@ -6,9 +6,9 @@ export default function Home() {
 
   useEffect(() => {
     axios
-      .get('/api/hello')
+      .get('/api/greeting')
       .then((response) => response.data)
-      .then((data) => setGreeting(data));
+      .then((data) => setGreeting(data.message));
   }, []);
 
   return <div>{greeting}</div>;
